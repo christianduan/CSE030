@@ -1,0 +1,46 @@
+Create sortArr function with three parameters
+  If variable equals 0
+    If arrSize less than 0
+      For loop with conditions i starting 1 less than arrSize, i decreasing
+        "max" variable
+	"maxIndex" variable
+	For loop with j starting at 0, j less than equal i, j increasing
+	  If arr at j is less than arr at maxIndex
+	    max equals arr at j
+	    maxIndex equals j
+	If maxIndex does not equal i
+	  swap arr at maxIndex with arr at i
+  Else if variable equals 1
+    If arrSize less than 0
+      For loop with conditions i starting 1 less than arrSize, i decreasing
+        "max" variable
+	"maxIndex" variable
+	For loop with j starting at 0, j less than equal i, j increasing
+	  If arr at maxIndex greater than arr at j
+	    max equals arr at j
+	    maxIndex equals j
+	If maxIndex does not equal i
+	  swap arr at maxIndex with arr at i
+      End for loop
+Function end
+
+Program start
+  arrSize variable
+  selection variable
+  Ask user size of array
+  User input arrSize
+  Ignore until input
+  If arrSize less than or equal to 0
+    Output Error message
+    End Program
+  Else
+    Ask user for array contents
+    Create array
+    If arrSize less than 0
+      For loop i starting at 0 less than arrSize, i increasing
+        Look through user input
+      End for loop
+    Ask user if they want to sort by ascending or descending
+    Call sortArr
+    Print sorted array
+Program end

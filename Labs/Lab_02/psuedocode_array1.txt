@@ -1,0 +1,24 @@
+Program start
+  State arraySize variable
+  Output "Enter the size of the array"
+  Input arraySize variable
+  Start if with condition "n <= 0"
+    Output "Error: you entered an incorrect value for the array size!"
+    Program end
+  End if statement
+  Output "Enter the numbers in the array, separated by spaces, and press enter: "
+  Input array numbers
+  State arr[arrSize] variable
+  Start if with condition "arrSize > 0"
+    Start for loop with conditions "int i being less than arrSize and increasing by one"
+      Check for integers
+	Print out integers
+    End for loop
+    New line
+    Start for loop with condition "int i being less than arrSize and increasing by one"
+      Start if with condition "arr[i] less than arr[i-1]
+	Output "This is NOT an increasing array!"
+	Break
+      Else if with conditions "i == arrSize - 1"
+	Output "This IS an increasing array!"
+Program End

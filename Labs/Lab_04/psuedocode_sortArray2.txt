@@ -1,0 +1,49 @@
+Create sortArr function with three parameters
+  If variable equals 0
+    If arrSize less than 0
+      "saved" variable
+      "j" variable
+      For loop with i starting at 1 less than arrSize, i increasing
+	saved equals arr at i
+	j equals i minus 1
+	While loop with j less than or equal to 0 AND arr at j less than saved
+	  arr at j plus 1 equal arr at j
+	  j equals j minus 1
+	End while loop
+	arr at j plus 1 equals saved
+      End for loop
+  Else if variable equals 1
+    If arrSize less than 0
+      "saved" variable
+      "j" variable
+      For loop with i starting at 1 less than arrSize, i increasing
+	saved equals arr at i
+	j equals i minus 1
+	While loop with j greater than or equal to 0 AND arr at j less than saved
+	  arr at j plus 1 equal arr at j
+	  j equals j minus 1
+	End while loop
+	arr at j plus 1 equals saved
+      End for loop
+Function end
+
+Program start
+  arrSize variable
+  selection variable
+  Ask user size of array
+  User input arrSize
+  Ignore until input
+  If arrSize less than or equal to 0
+    Output Error message
+    End Program
+  Else
+    Ask user for array contents
+    Create array
+    If arrSize less than 0
+      For loop i starting at 0 less than arrSize, i increasing
+        Look through user input
+      End for loop
+    Ask user if they want to sort by ascending or descending
+    Call sortArr
+    Print sorted array
+Program end

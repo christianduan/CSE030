@@ -1,0 +1,16 @@
+Algorithm getTimeFromUser(struct Time &time)
+  string s
+  int count <- 0
+  get data for s
+  from time set hour to integer form of s from 0 to 2
+  from time set minute to integer form of s from 3 to 5
+  from time set seconds to integer form of s from 6 to 8
+  for i <- 0 to 8 do
+    if 0 <= s.c_str() <= 9 or s.c_str[i] == ':' do
+      count + 1
+    end if
+  end for
+  if 0 < hour < 23 OR 0 < minute < 59 OR 0 < second < 59 OR 0 < count < 8 do
+    return false
+  end if
+  return true

@@ -1,0 +1,3 @@
+1. If using a linux based terminal, you would have to recompile the file using the different name
+2. If you compile a program only with "g++ <source>" only, the default exec file would be "a.out".
+3. In order to run a program without using "using namespace std", you would have to use "std::<directive>" in order for the code to run properly.

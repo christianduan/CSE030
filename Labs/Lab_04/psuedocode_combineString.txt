@@ -1,0 +1,17 @@
+Create combineStr function with parameters (string input, int number)
+  Declare newString to input
+  Start for loop starting at 1 where i is less than number
+    Input append to newString
+  End for loop
+  Return input
+End function
+
+Program start
+  Declare string variable
+  Declare int number variable
+  Output "Enter a string: "
+  Input "input"
+  Output "Enter a number of times: "
+  Input number
+  Output "The resulting string is: " combineStr function
+Program end

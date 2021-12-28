@@ -1,0 +1,64 @@
+Function checkArraySort(int arraySize, string* array):
+  bool ascending = true:
+  bool descending = true
+  for i = 0; i < arraySize - 1; i++:
+    if array[i] > array[i + 1]:
+      ascending = false
+      break
+  for i = 0; i < arraySize - 1; i++:
+    if array[i] < array[i + 1]:
+      descending = false
+      break
+  if ascending == false and descending == false:
+    return 0
+  else if ascending == true:
+    return 1
+  else if descending == true:
+    return -1
+End function
+
+Function binarySearchR(string key, string* array, int low, int high):
+  low = 0
+  high = arraySize
+  while low <= high:
+    int mid = low + high
+    if array[mid] == key:
+      return mid
+    if array[mid] > key:
+      high = mid - 1
+    else:
+      low = mid + 1 
+End function
+
+Main start
+  int count = 0
+  string* array
+  string data
+  Open file words_in.txt
+  While loop if not end of file
+    Get lines of data
+    Increase count
+  New array with size count
+  Close file
+  Open file words_int.txt
+  for i = 0; i < count; i++:
+    Get lines of data
+    array[i] = data
+  int order = call checkArraySort(count, array)
+  if order == 0:
+    Print "Array is not sorted"
+    return 0
+  else:
+    string key
+    Print "Enter a key to search for: "
+    Input key
+    int found = call binarySearch(key, array, count)
+    if found == -1:
+      Print "The key " + key + " was not found in the array"
+      return 0
+    else:
+      Print "Found key " + key + " at index " + found
+      return 0
+  delete array
+  Close file
+End main

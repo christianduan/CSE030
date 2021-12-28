@@ -1,0 +1,8 @@
+Program Start
+  String variable
+  Output "Enter a string to reverse: "
+  Input string
+  Declare "count" as string size
+  Start decreasing for loop
+    Output string at i index
+Program End

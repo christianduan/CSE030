@@ -1,0 +1,17 @@
+Program Start
+  Declare array size variable
+  Declare input variable
+  Declare negative counter variable
+  Output "Enter the size of a 2D array"
+  Input array size
+  Ignore spaces
+  Declare array
+  Check array size
+    Output error if array size is not in range
+  Start for loop
+    Output "Enter the values in the array for row" of i ", separated by a space, and press enter: "
+    For loop
+      Check for negative array contents
+  Check if there are any negatives
+    Output number of negatives if found
+Program End
